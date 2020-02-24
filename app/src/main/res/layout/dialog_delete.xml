@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_dialog_box"
+    android:paddingStart="@dimen/paddingDefault"
+    android:paddingTop="@dimen/paddingDefault"
+    android:paddingEnd="@dimen/paddingDefault">
+
+    <TextView
+        android:id="@+id/deleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingDefault"
+        android:text="@string/text_delete"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSize_delete"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/deleteControllerLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/deleteControllerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/paddingDefault"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deleteTextView">
+
+        <TextView
+            android:id="@+id/deleteCancelTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/paddingDefault"
+            android:text="@string/text_cancel"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSize_controller" />
+
+        <TextView
+            android:id="@+id/deleteDoneTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/paddingDefault"
+            android:text="@string/text_done"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSize_controller" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

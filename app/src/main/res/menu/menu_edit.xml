@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jin.programmers_memo.view.MainActivity">
+    <item
+        android:id="@+id/action_add_photo"
+        android:icon="@drawable/ic_insert_photo_24dp"
+        android:orderInCategory="100"
+        android:title="@string/action_add_photo"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/action_ap_album_and_camera"
+                android:orderInCategory="101"
+                android:title="@string/action_ap_album" />
+            <item
+                android:id="@+id/action_ap_external_image"
+                android:orderInCategory="102"
+                android:title="@string/action_ap_external_image" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="200"
+        android:title="@string/action_save"
+        app:showAsAction="ifRoom" />
+</menu>

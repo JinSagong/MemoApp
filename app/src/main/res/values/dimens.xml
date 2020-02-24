@@ -1,0 +1,21 @@
+<resources>
+    <dimen name="paddingDefault">16dp</dimen>
+    <dimen name="paddingHalf">8dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="textSize_mainTitle">17sp</dimen>
+    <dimen name="textSize_mainContent">14sp</dimen>
+    <dimen name="textSize_mainTime">10sp</dimen>
+
+    <dimen name="textSize_title">19sp</dimen>
+    <dimen name="textSize_content">15sp</dimen>
+    <dimen name="textSize_time">11sp</dimen>
+
+    <dimen name="textSize_controller">17sp</dimen>
+    <dimen name="textSize_editText">15sp</dimen>
+    <dimen name="textSize_pageDescription">17sp</dimen>
+    <dimen name="textSize_importPhoto">12sp</dimen>
+    <dimen name="textSize_delete">17sp</dimen>
+
+</resources>

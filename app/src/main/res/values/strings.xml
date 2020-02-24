@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">MEMO</string>
+
+    <!-- Text on Main Activity -->
+    <string name="text_main_page">Add a memo</string>
+
+    <!-- Texts on Detail Activity -->
+    <string name="text_created">Date Created</string>
+    <string name="text_last_edited">Date Last Edited</string>
+    <string name="text_delete">Delete this memo?</string>
+
+    <!-- Texts on Edit Activity -->
+    <string name="hint_title">Title</string>
+    <string name="hint_content">Content</string>
+    <string name="text_no_permission">No permission</string>
+    <string name="text_no_input">Nothing to save and empty memo discarded</string>
+
+    <!-- Texts on Search Activity -->
+    <string name="hint_search">Search</string>
+    <string name="text_search_page">Search for your memo</string>
+    <string name="text_no_search_result">No results found</string>
+
+    <!-- Messages for Glide Exceptions -->
+    <string name="FileNotFoundException1">The image you requested could not be found</string>
+    <string name="FileNotFoundException2">The image was deleted</string>
+    <string name="UnknownHostException">Check your network and try again</string>
+    <string name="NullPointerException">Please enter a URL</string>
+
+    <!-- Radio button titles for Sort Dialog -->
+    <string name="text_sort_method">Sorting Method</string>
+    <string name="text_sort_method1">Title</string>
+    <string name="text_sort_method2">Date created</string>
+    <string name="text_sort_method3">Date last edited</string>
+    <string name="text_sort_order">Sorting Order</string>
+    <string name="text_sort_order1">Ascending</string>
+    <string name="text_sort_order2">Descending</string>
+
+    <!-- Texts for Import Dialog -->
+    <string name="hint_import">Paste URL</string>
+    <string name="text_import_button">Import</string>
+    <string name="text_import_disable">No image you can load</string>
+
+    <!-- Texts for dialog controller -->
+    <string name="text_cancel">Cancel</string>
+    <string name="text_done">Done</string>
+
+    <!-- Menu item titles -->
+    <string name="action_search">Search</string>
+    <string name="action_sort">Sort</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_add_photo">Add Photo</string>
+    <string name="action_ap_album">Album &amp; Camera</string>
+    <string name="action_ap_external_image">External Image</string>
+    <string name="action_save">Save</string>
+
+    <!-- Activity labels -->
+    <string name="title_activity_detail" translatable="false">DetailActivity</string>
+    <string name="title_activity_edit" translatable="false">EditActivity</string>
+    <string name="title_activity_photo" translatable="false">PhotoActivity</string>
+    <string name="title_activity_search" translatable="false">SearchActivity</string>
+</resources>

@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.jin.programmers_memo"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    kotlinOptions { jvmTarget = "1.8" }
+    dataBinding { enabled = true }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation 'com.google.android.material:material:1.1.0'
+
+    // Kotlin 언어를 이용하였고 코드의 간결화를 위해 Anko 라이브러리를 이용함
+    // (https://github.com/Kotlin/anko)
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.anko:anko-common:0.10.5"
+
+    // 갤러리에서 사진을 선택하고 카메라 인텐트를 간편하게 이용하기 위해 TedImagePicker 라이브러리를 이용함
+    // (https://github.com/ParkSangGwon/TedImagePicker)
+    implementation "gun0912.ted:tedimagepicker:1.0.8"
+
+    // 이미지 로딩을 위해 Glide 라이브러리를 이용함
+    // (https://github.com/bumptech/glide)
+    implementation "com.github.bumptech.glide:glide:4.6.1"
+
+    // 사진 확대, 축소, 스크롤을 구현하기 위해 PhotoView 라이브러리를 이용함
+    // (https://github.com/chrisbanes/PhotoView)
+    implementation "com.github.chrisbanes:PhotoView:2.3.0"
+}

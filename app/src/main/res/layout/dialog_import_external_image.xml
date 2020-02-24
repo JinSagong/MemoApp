@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_dialog_box"
+    android:paddingStart="@dimen/paddingDefault"
+    android:paddingTop="@dimen/paddingDefault"
+    android:paddingEnd="@dimen/paddingDefault">
+
+    <ImageView
+        android:id="@+id/importImageVIew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/paddingDefault"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/importInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/importInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/importControllerLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/importImageVIew">
+
+        <EditText
+            android:id="@+id/importEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/paddingDefault"
+            android:layout_marginTop="@dimen/paddingDefault"
+            android:layout_marginBottom="@dimen/paddingDefault"
+            android:background="@drawable/item_search_box"
+            android:hint="@string/hint_import"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="@dimen/paddingDefault"
+            android:paddingTop="@dimen/paddingHalf"
+            android:paddingEnd="@dimen/paddingDefault"
+            android:paddingBottom="@dimen/paddingHalf"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorHint"
+            android:textSize="@dimen/textSize_editText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/importTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/importTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/paddingDefault"
+            android:background="@drawable/item_button"
+            android:padding="@dimen/paddingHalf"
+            android:text="@string/text_import_button"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/textSize_importPhoto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/importEditText"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/importControllerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/paddingDefault"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/importInputLayout">
+
+        <TextView
+            android:id="@+id/importCancelTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/paddingDefault"
+            android:text="@string/text_cancel"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSize_controller" />
+
+        <TextView
+            android:id="@+id/importDoneTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/paddingDefault"
+            android:text="@string/text_done"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/textSize_controller" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
